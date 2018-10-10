@@ -9,6 +9,7 @@ struct Fenwick {
         fen.push_back(0);
         for(int i = 0; i < n; i++) fen.push_back(0);
     }
+    //Update
     void update(int p, int val) {
         for(int i = p; i <= size; i+= i & -i)
             fen[i] += val;
