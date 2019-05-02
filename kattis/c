@@ -1,0 +1,17 @@
+function remove() {
+    if [ -f ./compile ]; then 
+        rm compile
+    fi
+}
+
+function run() {
+    echo "=>"
+    if [ -f ./compile ]; then 
+        ./compile
+    fi
+}
+
+remove
+g++ -std=c++11 -O2 -Wall -o compile $1
+run
+remove
