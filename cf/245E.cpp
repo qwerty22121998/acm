@@ -5,6 +5,8 @@ using namespace std;
 string s;
 
 void solve() {
+    vector<int> a;
+    
     int now = 0, minn = 0, maxx = 0;
     for(auto e : s) {
         if (e == '+') now++;
