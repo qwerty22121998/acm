@@ -1,19 +1,13 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-int n;
-
-void solve() {
-    vector<int> a;
-    
-}
+union numericUnion {
+    int intValue;
+    long longValue;
+    double doubleValue;
+};
 
 int main() {
-    ios::sync_with_stdio(0);
-    cin.tie(0);
-    cout.tie(0);
-
-    cin >> n;
-    
-
+    int i{1};
+    cout << i << endl;
 }
